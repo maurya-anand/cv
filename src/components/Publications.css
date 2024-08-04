@@ -26,22 +26,33 @@
   transform: scale(1.02);
 }
 
-.publication-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
+.publication-card h3,
+.publication-card p,
+.publication-card a {
+  margin: 5px 0;
 }
 
-.publication-card p {
-  margin: 5px 0;
+.publication-card h3 {
+  margin-top: 0;
 }
 
 .publication-card a {
   color: rgb(33, 150, 243);
   text-decoration: none;
+  font-size: 0.8em;
 }
 
 .publication-card a:hover {
   text-decoration: underline;
+}
+
+.publication-title {
+  font-size: 0.9em;
+}
+
+.publication-author,
+.publication-journal {
+  font-size: 0.8em;
 }
 
 /* Media query to handle very small screens */
@@ -52,14 +63,6 @@
 
   .publication-card {
     padding: 15px;
-  }
-
-  .publication-card h3 {
-    font-size: 1em;
-  }
-
-  .publication-card p {
-    font-size: 0.9em;
   }
 }
 
