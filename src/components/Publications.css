@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; /* Include this to handle all elements properly */
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.publication-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.publication-card:hover {
+  transform: scale(1.02);
+}
+
+.publication-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.publication-card p {
+  margin: 5px 0;
+}
+
+.publication-card a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.publication-card a:hover {
+  text-decoration: underline;
+}
+
+/* Media query to handle very small screens */
+@media (max-width: 600px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media query to handle larger screens */
+@media only screen and (min-width: 1170px) {
+  .publications-grid {
+    width: 90%;
+  }
+}
