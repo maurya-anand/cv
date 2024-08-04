@@ -15,7 +15,7 @@ const skillsData = [
     skills: [
       { name: "Germline and somatic variant calling", level: 90 },
       { name: "NGS data analysis (WGS, WES, RNA-Seq)", level: 85 },
-      { name: "Pipeline development and automation", level: 80 },
+      { name: "Pipeline development and automation", level: 90 },
     ],
     icon: <FaTools />,
   },
@@ -31,7 +31,7 @@ const skillsData = [
     category: "Cluster Computing (HPC)",
     skills: [
       { name: "PBS", level: 70 },
-      { name: "SLURM", level: 75 },
+      { name: "SLURM", level: 90 },
     ],
     icon: <FaServer />,
   },
@@ -43,8 +43,8 @@ const skillsData = [
   {
     category: "Containerization & Package Management",
     skills: [
-      { name: "Docker", level: 80 },
-      { name: "Mamba", level: 75 },
+      { name: "Docker", level: 90 },
+      { name: "Mamba", level: 80 },
       { name: "Pip", level: 80 },
     ],
     icon: <FaDatabase />,
@@ -52,11 +52,11 @@ const skillsData = [
   {
     category: "Programming Languages",
     skills: [
-      { name: "Bash", level: 80 },
-      { name: "JavaScript", level: 75 },
-      { name: "Perl", level: 70 },
-      { name: "Python", level: 90 },
-      { name: "R", level: 85 },
+      { name: "Bash", level: 90 },
+      { name: "JavaScript", level: 85 },
+      { name: "Perl", level: 95 },
+      { name: "Python", level: 80 },
+      { name: "R", level: 70 },
       { name: "SQL", level: 80 },
     ],
     icon: <FaCode />,
@@ -64,11 +64,11 @@ const skillsData = [
   {
     category: "Project Management & Documentation",
     skills: [
-      { name: "Confluence", level: 75 },
-      { name: "GitHub Projects", level: 70 },
-      { name: "Markdown", level: 80 },
-      { name: "Quarto", level: 75 },
-      { name: "Redmine", level: 70 },
+      { name: "Confluence", level: 85 },
+      { name: "GitHub Projects", level: 80 },
+      { name: "Markdown", level: 95 },
+      { name: "Quarto", level: 80 },
+      { name: "Redmine", level: 80 },
     ],
     icon: <FaProjectDiagram />,
   },
@@ -76,7 +76,7 @@ const skillsData = [
     category: "Version Control",
     skills: [
       { name: "Git", level: 85 },
-      { name: "SVN", level: 70 },
+      { name: "SVN", level: 80 },
     ],
     icon: <FaCode />,
   },
@@ -84,12 +84,12 @@ const skillsData = [
     category: "Web Development",
     skills: [
       { name: "Bootstrap", level: 75 },
-      { name: "D3.js", level: 70 },
+      { name: "D3.js", level: 60 },
       { name: "Django", level: 80 },
       { name: "Django Rest Framework", level: 75 },
       { name: "HighCharts", level: 70 },
       { name: "jQuery", level: 75 },
-      { name: "Perl CGI", level: 65 },
+      { name: "Perl CGI", level: 80 },
       { name: "Plotly", level: 70 },
       { name: "React", level: 80 },
     ],
@@ -98,9 +98,9 @@ const skillsData = [
   {
     category: "Workflow Management",
     skills: [
-      { name: "Make", level: 75 },
-      { name: "Nextflow", level: 80 },
-      { name: "WDL", level: 70 },
+      { name: "Make", level: 80 },
+      { name: "Nextflow", level: 90 },
+      { name: "WDL", level: 90 },
     ],
     icon: <FaTools />,
   },
