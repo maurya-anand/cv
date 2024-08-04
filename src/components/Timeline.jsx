@@ -84,42 +84,9 @@ const combinedTimeline = timelineData.sort((a, b) => {
   return getDate(b.period) - getDate(a.period);
 });
 
-// const Timeline = () => (
-//   <section className="section-container">
-//     <h2 className="centered-header">Timeline</h2>
-//     <VerticalTimeline>
-//       {combinedTimeline.map((item, index) => (
-//         <VerticalTimelineElement
-//           key={index}
-//           date={item.period}
-//           icon={item.type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
-//           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-//         >
-//           <h3 className="vertical-timeline-element-title">
-//             {item.type === "work" ? item.title : item.title}
-//           </h3>
-//           <h4 className="vertical-timeline-element-subtitle">
-//             {item.company} - {item.location}
-//           </h4>
-//           <br />
-//           {item.duties.length > 0 && (
-//             <ul>
-//               {item.duties.map((duty, idx) => (
-//                 <li key={idx}>{duty}</li>
-//               ))}
-//             </ul>
-//           )}
-//         </VerticalTimelineElement>
-//       ))}
-//     </VerticalTimeline>
-//   </section>
-// );
-
-// export default Timeline;
-
 const Timeline = () => (
   <section className="section-container">
-    <h2 className="centered-header">Timeline</h2>
+    <h2 className="centered-header">Career Timeline</h2>
     <VerticalTimeline>
       {combinedTimeline.map((item, index) => (
         <VerticalTimelineElement
