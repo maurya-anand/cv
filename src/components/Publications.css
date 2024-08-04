@@ -18,6 +18,8 @@
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .publication-card:hover {
@@ -46,6 +48,18 @@
 @media (max-width: 600px) {
   .publications-grid {
     grid-template-columns: 1fr;
+  }
+
+  .publication-card {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .publication-card h3 {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .publication-card p {
+    font-size: 0.9em; /* Adjust font size for smaller screens */
   }
 }
 
