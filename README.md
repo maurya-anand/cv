@@ -1,8 +1,44 @@
-# React + Vite
+# Personal Resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal resume, which is hosted using GitHub Pages.
 
-Currently, two official plugins are available:
+## Live Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://maurya-anand.github.io/cv/](https://maurya-anand.github.io/cv/)
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+- Clone the repository:
+
+```sh
+git clone https://github.com/maurya-anand/cv.git
+```
+
+- Navigate to the project directory:
+
+```sh
+cd cv
+```
+
+- Install dependencies:
+
+```sh
+npm install
+```
+
+## Usage
+
+To run the project locally, use the following command:
+
+```sh
+npm run dev
+```
+
+## Components
+
+- Vite
+- React.js
+- react-vertical-timeline-component
+- react-icons
