@@ -123,7 +123,6 @@ const Skills = () => (
               <div key={idx} className="skill-bar">
                 <div className="skill-name">{skill.name}</div>
                 <div className="skill-level" style={{ width: `${skill.level}%` }}>
-                  {skill.level}%
                 </div>
               </div>
             ))}

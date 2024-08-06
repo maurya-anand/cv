@@ -55,7 +55,7 @@
   text-overflow: ellipsis;
   font-size: 0.7em; 
   flex: 1;
-  color: #000;
+  color: #fff;
   z-index: 1;
 }
 
@@ -83,6 +83,7 @@
 .skill-level::after {
   content: attr(data-level) '%';
   padding-left: 10px;
+  visibility: hidden; 
 }
 
 .skill-bar::before {
