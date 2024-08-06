@@ -14,7 +14,6 @@
     font-size: 1.2em;
   }
   
-  /* Media query to handle very small screens */
   @media (max-width: 600px) {
     .header {
       padding: 10px;

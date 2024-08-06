@@ -55,7 +55,6 @@
   font-size: 0.8em;
 }
 
-/* Media query to handle very small screens */
 @media (max-width: 600px) {
   .publications-grid {
     grid-template-columns: 1fr;
@@ -66,7 +65,6 @@
   }
 }
 
-/* Media query to handle larger screens */
 @media only screen and (min-width: 1170px) {
   .publications-grid {
     width: 90%;
