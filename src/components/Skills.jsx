@@ -20,34 +20,28 @@ const skillsData = [
     icon: <FaTools />,
   },
   {
-    category: "CI/CD",
+    category: "Workflow Management",
     skills: [
-      { name: "GitHub Actions", level: 85 },
-      { name: "Jenkins", level: 75 },
+      { name: "Make", level: 80 },
+      { name: "Nextflow", level: 90 },
+      { name: "WDL", level: 90 },
     ],
-    icon: <FaProjectDiagram />,
+    icon: <FaTools />,
   },
   {
-    category: "Cluster Computing (HPC)",
+    category: "Web Development",
     skills: [
-      { name: "PBS", level: 70 },
-      { name: "SLURM", level: 90 },
+      { name: "Bootstrap", level: 75 },
+      { name: "D3.js", level: 60 },
+      { name: "Django", level: 85 },
+      { name: "Django Rest Framework", level: 70 },
+      { name: "HighCharts", level: 70 },
+      { name: "jQuery", level: 65 },
+      { name: "Perl CGI", level: 80 },
+      { name: "Plotly", level: 60 },
+      { name: "React", level: 85 },
     ],
-    icon: <FaServer />,
-  },
-  {
-    category: "Cloud Computing",
-    skills: [{ name: "Google Cloud Platform (GCP)", level: 85 }],
-    icon: <FaCloud />,
-  },
-  {
-    category: "Containerization & Package Management",
-    skills: [
-      { name: "Docker", level: 90 },
-      { name: "Mamba", level: 80 },
-      { name: "Pip", level: 80 },
-    ],
-    icon: <FaDatabase />,
+    icon: <FaCode />,
   },
   {
     category: "Programming Languages",
@@ -73,6 +67,31 @@ const skillsData = [
     icon: <FaProjectDiagram />,
   },
   {
+    category: "Containerization & Package Management",
+    skills: [
+      { name: "Docker", level: 90 },
+      { name: "Mamba", level: 80 },
+      { name: "Pip", level: 80 },
+    ],
+    icon: <FaDatabase />,
+  },
+  {
+    category: "CI/CD",
+    skills: [
+      { name: "GitHub Actions", level: 85 },
+      { name: "Jenkins", level: 75 },
+    ],
+    icon: <FaProjectDiagram />,
+  },
+  {
+    category: "Cluster Computing (HPC)",
+    skills: [
+      { name: "PBS", level: 70 },
+      { name: "SLURM", level: 90 },
+    ],
+    icon: <FaServer />,
+  },
+  {
     category: "Version Control",
     skills: [
       { name: "Git", level: 85 },
@@ -81,29 +100,11 @@ const skillsData = [
     icon: <FaCode />,
   },
   {
-    category: "Web Development",
-    skills: [
-      { name: "Bootstrap", level: 75 },
-      { name: "D3.js", level: 60 },
-      { name: "Django", level: 85 },
-      { name: "Django Rest Framework", level: 70 },
-      { name: "HighCharts", level: 70 },
-      { name: "jQuery", level: 65 },
-      { name: "Perl CGI", level: 80 },
-      { name: "Plotly", level: 60 },
-      { name: "React", level: 85 },
-    ],
-    icon: <FaCode />,
+    category: "Cloud Computing",
+    skills: [{ name: "Google Cloud Platform (GCP)", level: 85 }],
+    icon: <FaCloud />,
   },
-  {
-    category: "Workflow Management",
-    skills: [
-      { name: "Make", level: 80 },
-      { name: "Nextflow", level: 90 },
-      { name: "WDL", level: 90 },
-    ],
-    icon: <FaTools />,
-  },
+
 ];
 
 const Skills = () => (
