@@ -19,6 +19,8 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .category-icon {
@@ -40,27 +42,27 @@
   overflow: hidden;
   margin: 8px 0;
   position: relative;
-  height: 25px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .skill-name {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 70%;
-  font-size: 0.9em; 
+  font-size: 0.7em; 
+  flex: 1;
+  color: #000;
+  z-index: 1;
 }
 
 .skill-level {
   background: rgb(33, 150, 243);
   height: 100%;
-  line-height: 30px;
+  line-height: 20px;
   color: white;
   text-align: right;
   padding-right: 10px;
@@ -68,10 +70,32 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9em;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-/* Media query to handle very small screens */
+.skill-level::after {
+  content: attr(data-level) '%';
+  padding-left: 10px;
+}
+
+.skill-bar::before {
+  content: '';
+  background: rgb(33, 150, 243);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: -1;
+}
+
 @media (max-width: 600px) {
   .skills-grid {
     grid-template-columns: 1fr;
@@ -82,7 +106,7 @@
   }
 
   .category-icon {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .category-header {
@@ -90,20 +114,25 @@
   }
 
   .skill-bar {
-    height: 25px;
+    height: 15px;
+    padding: 0 5px;
   }
 
   .skill-name {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    flex: none;
+    margin-right: auto;
   }
 
   .skill-level {
-    font-size: 0.8em;
-    line-height: 25px;
+    font-size: 0.6em;
+    line-height: 15px;
+    padding-right: 5px;
+    flex: none;
+    margin-left: auto;
   }
 }
 
-/* Media query to handle larger screens */
 @media only screen and (min-width: 1170px) {
   .skills-grid {
     width: 90%;
@@ -116,6 +145,8 @@
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .skill-card:hover {
