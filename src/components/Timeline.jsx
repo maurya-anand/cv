@@ -26,7 +26,7 @@ const timelineData = [
     company: "Adam Mickiewicz University",
     location: "Poznan, Poland",
     title: "PhD Researcher",
-    period: "Oct 2018 - Dec 2022",
+    period: "Oct 2018 - Current",
     duties: [
       "Developed a bioinformatics pipeline for automated exploration of NCBI SRA datasets, enabling efficient sequence-based searches and analysis of large-scale NGS data.",
       "Analyzed publicly available RNA-seq data to understand gene expression patterns of snoRNAs, tRNAs, and tRNA-like genes.",
