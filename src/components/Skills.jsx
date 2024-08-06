@@ -116,14 +116,16 @@ const Skills = () => (
             <div className="category-icon">{category.icon}</div>
             <h3>{category.category}</h3>
           </div>
-          {category.skills.map((skill, idx) => (
-            <div key={idx} className="skill-bar">
-              <div className="skill-name">{skill.name}</div>
-              <div className="skill-level" style={{ width: `${skill.level}%` }}>
-                {skill.level}%
+          {category.skills
+            .sort((a, b) => b.level - a.level)
+            .map((skill, idx) => (
+              <div key={idx} className="skill-bar">
+                <div className="skill-name">{skill.name}</div>
+                <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                  {skill.level}%
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       ))}
     </div>
