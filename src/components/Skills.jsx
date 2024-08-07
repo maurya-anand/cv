@@ -104,7 +104,6 @@ const skillsData = [
     skills: [{ name: "Google Cloud Platform (GCP)", level: 85 }],
     icon: <FaCloud />,
   },
-
 ];
 
 const Skills = () => (
@@ -122,8 +121,10 @@ const Skills = () => (
             .map((skill, idx) => (
               <div key={idx} className="skill-bar">
                 <div className="skill-name">{skill.name}</div>
-                <div className="skill-level" style={{ width: `${skill.level}%` }}>
-                </div>
+                <div
+                  className="skill-level"
+                  style={{ width: `${skill.level}%` }}
+                ></div>
               </div>
             ))}
         </div>

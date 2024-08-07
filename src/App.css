@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
@@ -17,11 +17,15 @@ body {
   max-width: 1200px;
 }
 
-header, section {
+header,
+section {
   margin-bottom: 20px;
 }
 
-header p, section h2, section h3, section p {
+header p,
+section h2,
+section h3,
+section p {
   margin: 5px 0;
 }
 

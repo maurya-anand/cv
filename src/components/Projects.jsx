@@ -1,20 +1,49 @@
-import React from 'react';
-import { FaGithub, FaExternalLinkAlt, FaPython, FaDocker, FaReact, FaBootstrap, FaToolbox } from 'react-icons/fa';
-import { SiPypi, SiDjango, SiPerl, SiGnubash, SiJavascript, SiMui, SiAnaconda, SiGithubactions, SiFirebase, SiRender, SiAxios, SiGooglecloud } from 'react-icons/si';
+import React from "react";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaPython,
+  FaDocker,
+  FaReact,
+  FaBootstrap,
+  FaToolbox,
+} from "react-icons/fa";
+import {
+  SiPypi,
+  SiDjango,
+  SiPerl,
+  SiGnubash,
+  SiJavascript,
+  SiMui,
+  SiAnaconda,
+  SiGithubactions,
+  SiFirebase,
+  SiRender,
+  SiAxios,
+  SiGooglecloud,
+} from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { PiBracketsCurlyBold } from "react-icons/pi";
-import './Projects.css';
+import "./Projects.css";
 
 const projects = [
   {
     name: "ARA (Automated Record Analysis)",
-    description: "An automatic pipeline for exploration of SRA datasets with sequences as a query.",
+    description:
+      "An automatic pipeline for exploration of SRA datasets with sequences as a query.",
     repo: "https://github.com/maurya-anand/ARA",
-    technologies: ["Perl", "FaToolbox", "Docker", "SiAnaconda", "SiGithubactions"],
+    technologies: [
+      "Perl",
+      "FaToolbox",
+      "Docker",
+      "SiAnaconda",
+      "SiGithubactions",
+    ],
   },
   {
     name: "Covid19 tracker",
-    description: "A dashboard application to display the Covid-19 cases across the world.",
+    description:
+      "A dashboard application to display the Covid-19 cases across the world.",
     demo: "https://covidlive-8jvw.onrender.com/",
     repo: "https://github.com/maurya-anand/covid19live",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
@@ -35,28 +64,39 @@ const projects = [
   },
   {
     name: "SRA-annotator",
-    description: "A command-line tool for retrieving annotations from the NCBI SRA database.",
+    description:
+      "A command-line tool for retrieving annotations from the NCBI SRA database.",
     repo: "https://github.com/maurya-anand/sra-annotator",
     technologies: ["Python", "NCBIApi"],
   },
   {
     name: "getBamDepth",
-    description: "A custom tool for reporting depth of coverage from BAM/SAM/CRAM file or parse the output generated from `samtools depth`.",
+    description:
+      "A custom tool for reporting depth of coverage from BAM/SAM/CRAM file or parse the output generated from `samtools depth`.",
     repo: "https://github.com/maurya-anand/getBamDepth",
     technologies: ["Perl"],
   },
   {
     name: "variant-liftover",
-    description: "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
+    description:
+      "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
     repo: "https://github.com/maurya-anand/liftover",
     technologies: ["Bash", "Docker", "SiGithubactions"],
   },
   {
     name: "pb-variant-call",
-    description: "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads.",
+    description:
+      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads.",
     demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
     repo: "https://github.com/anand-imcm/pb-variant-call",
-    technologies: ["PiBracketsCurlyBold", "Python", "Perl", "Docker", "SiGithubactions", "SiGooglecloud"],
+    technologies: [
+      "PiBracketsCurlyBold",
+      "Python",
+      "Perl",
+      "Docker",
+      "SiGithubactions",
+      "SiGooglecloud",
+    ],
   },
 ];
 
@@ -70,16 +110,25 @@ const technologyIcons = {
   JavaScript: <SiJavascript className="technology-icon" title="JavaScript" />,
   MUI: <SiMui className="technology-icon" title="Material UI" />,
   SiAnaconda: <SiAnaconda className="technology-icon" title="Mamba" />,
-  SiGithubactions : <SiGithubactions className="technology-icon" title="Github Actions" />,
-  FaBootstrap : <FaBootstrap className="technology-icon" title="Bootstrap" />,
-  SiFirebase : <SiFirebase className="technology-icon" title="Firebase" />,
-  SiRender : <SiRender className="technology-icon" title="Render" />,
-  SiAxios : <SiAxios className="technology-icon" title="Axios" />,
-  NCBIApi : <TbApi className="technology-icon" title="NCBI Entrez" />,
-  TbApi : <TbApi className="technology-icon" title="NCBI Entrez" />,
-  FaToolbox : <FaToolbox className="technology-icon" title="NCBI SRA toolkit" />,
-  PiBracketsCurlyBold : <PiBracketsCurlyBold className="technology-icon" title="Workflow Description Language (WDL)" />,
-  SiGooglecloud : <SiGooglecloud className="technology-icon" title="Terra.bio on GCP" />
+  SiGithubactions: (
+    <SiGithubactions className="technology-icon" title="Github Actions" />
+  ),
+  FaBootstrap: <FaBootstrap className="technology-icon" title="Bootstrap" />,
+  SiFirebase: <SiFirebase className="technology-icon" title="Firebase" />,
+  SiRender: <SiRender className="technology-icon" title="Render" />,
+  SiAxios: <SiAxios className="technology-icon" title="Axios" />,
+  NCBIApi: <TbApi className="technology-icon" title="NCBI Entrez" />,
+  TbApi: <TbApi className="technology-icon" title="NCBI Entrez" />,
+  FaToolbox: <FaToolbox className="technology-icon" title="NCBI SRA toolkit" />,
+  PiBracketsCurlyBold: (
+    <PiBracketsCurlyBold
+      className="technology-icon"
+      title="Workflow Description Language (WDL)"
+    />
+  ),
+  SiGooglecloud: (
+    <SiGooglecloud className="technology-icon" title="Terra.bio on GCP" />
+  ),
 };
 
 const Projects = () => (
@@ -101,16 +150,31 @@ const Projects = () => (
           <p className="project-description">{project.description}</p>
           <div className="project-links">
             {project.demo && (
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
                 <FaExternalLinkAlt /> Demo
               </a>
             )}
             {project.pypi && (
-              <a href={project.pypi} target="_blank" rel="noopener noreferrer" className="project-link">
+              <a
+                href={project.pypi}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
                 <SiPypi /> PyPI
               </a>
             )}
-            <a href={project.repo} target="_blank" rel="noopener noreferrer" className="project-link">
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
               <FaGithub /> Source
             </a>
           </div>

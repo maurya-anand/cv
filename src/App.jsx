@@ -1,22 +1,21 @@
-import { React } from 'react'
-import './App.css'
-import Header from './components/Header';
-import Timeline from './components/Timeline';
-import Skills from './components/Skills';
-import Publications from './components/Publications';
-import Projects from './components/Projects';
-
+import { React } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Timeline from "./components/Timeline";
+import Skills from "./components/Skills";
+import Publications from "./components/Publications";
+import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className='container'>
+    <div className="container">
       <Header />
       <Timeline />
-      <Projects/>
+      <Projects />
       <Skills />
       <Publications />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
