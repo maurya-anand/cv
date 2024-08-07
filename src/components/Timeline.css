@@ -5,3 +5,8 @@
 .timeline-card:hover {
   transform: scale(1.02);
 }
+
+h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+}
