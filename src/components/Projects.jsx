@@ -42,12 +42,34 @@ const projects = [
     ],
   },
   {
+    name: "pb-variant-call",
+    description:
+      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
+    demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
+    repo: "https://github.com/anand-imcm/pb-variant-call",
+    technologies: [
+      "PiBracketsCurlyBold",
+      "Python",
+      "Perl",
+      "Docker",
+      "SiGithubactions",
+      "SiGooglecloud",
+    ],
+  },
+  {
     name: "Covid19 tracker",
     description:
       "A dashboard application to display the Covid-19 cases across the world.",
     demo: "https://covidlive-8jvw.onrender.com/",
     repo: "https://github.com/maurya-anand/covid19live",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
+  },
+  {
+    name: "getBamDepth",
+    description:
+      "A custom tool for reporting depth of coverage from BAM/SAM/CRAM file or parse the output generated from `samtools depth`.",
+    repo: "https://github.com/maurya-anand/getBamDepth",
+    technologies: ["Perl"],
   },
   {
     name: "Multi-language dictionary",
@@ -71,33 +93,11 @@ const projects = [
     technologies: ["Python", "NCBIApi"],
   },
   {
-    name: "getBamDepth",
-    description:
-      "A custom tool for reporting depth of coverage from BAM/SAM/CRAM file or parse the output generated from `samtools depth`.",
-    repo: "https://github.com/maurya-anand/getBamDepth",
-    technologies: ["Perl"],
-  },
-  {
     name: "variant-liftover",
     description:
       "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
     repo: "https://github.com/maurya-anand/liftover",
     technologies: ["Bash", "Docker", "SiGithubactions"],
-  },
-  {
-    name: "pb-variant-call",
-    description:
-      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
-    demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
-    repo: "https://github.com/anand-imcm/pb-variant-call",
-    technologies: [
-      "PiBracketsCurlyBold",
-      "Python",
-      "Perl",
-      "Docker",
-      "SiGithubactions",
-      "SiGooglecloud",
-    ],
   },
 ];
 
