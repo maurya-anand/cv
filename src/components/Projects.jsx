@@ -86,7 +86,7 @@ const projects = [
   {
     name: "pb-variant-call",
     description:
-      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads.",
+      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
     demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
     repo: "https://github.com/anand-imcm/pb-variant-call",
     technologies: [
