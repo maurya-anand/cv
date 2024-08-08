@@ -32,6 +32,7 @@ const projects = [
     description:
       "An automatic pipeline for exploration of SRA datasets with sequences as a query.",
     repo: "https://github.com/maurya-anand/ARA",
+    demo: "https://workflowhub.eu/workflows/546",
     technologies: [
       "Perl",
       "FaToolbox",
