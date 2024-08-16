@@ -28,7 +28,7 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "ARA",
+    name: "ARA (Automatic Record Analysis)",
     description:
       "A pipeline designed for the automatic exploration of NCBI SRA datasets using nucleotide sequences as queries. ",
     repo: "https://github.com/maurya-anand/ARA",
