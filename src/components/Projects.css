@@ -6,10 +6,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 95%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 0.5em 0;
 }
 
 .project-card {
@@ -95,6 +95,6 @@
 
 @media only screen and (min-width: 1170px) {
   .projects-grid {
-    width: 90%;
+    width: 100%;
   }
 }
