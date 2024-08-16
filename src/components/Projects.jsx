@@ -28,9 +28,9 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "ARA (Automated Record Analysis)",
+    name: "ARA",
     description:
-      "An automatic pipeline for exploration of SRA datasets with sequences as a query.",
+      "A pipeline designed for the automatic exploration of NCBI SRA datasets using nucleotide sequences as queries. ",
     repo: "https://github.com/maurya-anand/ARA",
     demo: "https://workflowhub.eu/workflows/546",
     technologies: [
@@ -59,7 +59,7 @@ const projects = [
   {
     name: "Covid19 tracker",
     description:
-      "A dashboard application to display the Covid-19 cases across the world.",
+      "An interactive dashboard built using Django that uses the Disease.sh API to visualize the global Covid-19 case data in real-time.",
     demo: "https://covidlive-8jvw.onrender.com/",
     repo: "https://github.com/maurya-anand/covid19live",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
