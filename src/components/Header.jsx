@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaOrcid } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => (
@@ -35,6 +35,13 @@ const Header = () => (
         rel="noopener noreferrer"
       >
         <FaGithub title="anand-imcm" />
+      </a>
+      <a
+        href="https://orcid.org/0000-0002-6204-2164"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaOrcid title="Orcid" />
       </a>
     </div>
   </header>

@@ -21,6 +21,8 @@ import {
   SiRender,
   SiAxios,
   SiGooglecloud,
+  SiTensorflow,
+  SiScikitlearn,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { PiBracketsCurlyBold } from "react-icons/pi";
@@ -42,6 +44,22 @@ const projects = [
     ],
   },
   {
+    name: "proteomics-ML-workflow",
+    description:
+      "A cloud-based proteomics machine learning workflow for biomarker discovery.",
+    demo: "https://dockstore.org/workflows/github.com/anand-imcm/proteomics-ML-workflow",
+    repo: "https://github.com/anand-imcm/proteomics-ML-workflow",
+    technologies: [
+      "PiBracketsCurlyBold",
+      "Python",
+      "SiTensorflow",
+      "SiScikitlearn",
+      "Docker",
+      "SiGithubactions",
+      "SiGooglecloud",
+    ],
+  },
+  {
     name: "pb-variant-call",
     description:
       "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
@@ -57,19 +75,26 @@ const projects = [
     ],
   },
   {
+    name: "SRA-annotator",
+    description:
+      "A command-line tool for retrieving annotations from the NCBI SRA database.",
+    repo: "https://github.com/maurya-anand/sra-annotator",
+    technologies: ["Python", "NCBIApi"],
+  },
+  {
+    name: "variant-liftover",
+    description:
+      "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
+    repo: "https://github.com/maurya-anand/liftover",
+    technologies: ["Bash", "Docker", "SiGithubactions"],
+  },
+  {
     name: "Covid19 tracker",
     description:
       "An interactive dashboard built using Django that uses the Disease.sh API to visualize the global Covid-19 case data in real-time.",
     demo: "https://covidlive-8jvw.onrender.com/",
     repo: "https://github.com/maurya-anand/covid19live",
     technologies: ["Python", "Django", "JavaScript", "FaBootstrap", "SiRender"],
-  },
-  {
-    name: "getBamDepth",
-    description:
-      "A custom tool for reporting depth of coverage from BAM/SAM/CRAM file or parse the output generated from `samtools depth`.",
-    repo: "https://github.com/maurya-anand/getBamDepth",
-    technologies: ["Perl"],
   },
   {
     name: "Multi-language dictionary",
@@ -84,20 +109,6 @@ const projects = [
     demo: "https://netflix-react-a5dbe.web.app/",
     repo: "https://github.com/maurya-anand/netflix-react",
     technologies: ["ReactJS", "SiAxios", "SiFirebase"],
-  },
-  {
-    name: "SRA-annotator",
-    description:
-      "A command-line tool for retrieving annotations from the NCBI SRA database.",
-    repo: "https://github.com/maurya-anand/sra-annotator",
-    technologies: ["Python", "NCBIApi"],
-  },
-  {
-    name: "variant-liftover",
-    description:
-      "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
-    repo: "https://github.com/maurya-anand/liftover",
-    technologies: ["Bash", "Docker", "SiGithubactions"],
   },
 ];
 
@@ -130,6 +141,8 @@ const technologyIcons = {
   SiGooglecloud: (
     <SiGooglecloud className="technology-icon" title="Terra.bio on GCP" />
   ),
+  SiTensorflow: <SiTensorflow className="technology-icon" title="Tensorflow" />,
+  SiScikitlearn: <SiScikitlearn className="technology-icon" title="Scikitlearn" />,
 };
 
 const Projects = () => (

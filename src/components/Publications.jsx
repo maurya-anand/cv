@@ -4,6 +4,15 @@ import "./Publications.css";
 const publications = [
   {
     title:
+      "A cloud-based proteomics ML workflow for biomarker discovery",
+    authors:
+      "Zhou, Y., Maurya, A., Deng, Y., & Taylor, A",
+    journal: "preprint zenodo.13378797",
+    year: 2024,
+    doi: "https://doi.org/10.5281/zenodo.13378797",
+  },
+  {
+    title:
       "ARA: A flexible pipeline for automated exploration of NCBI SRA datasets",
     authors: "Maurya, A., Szymanski, M., & Karlowski, W. M.",
     journal: "GigaScience",
