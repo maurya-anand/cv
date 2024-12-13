@@ -56,14 +56,6 @@ const publications = [
   },
   {
     title:
-      "An accurate machine learning approach to predict immunogenic peptides in human",
-    authors: "Shah, P., Maurya, A. K., Gupta, R., Chaudhuri, A., & Gupta, R.",
-    journal: "Canadian Journal of Biotechnology",
-    year: 2017,
-    doi: "https://doi.org/10.24870/cjb.2017-a209",
-  },
-  {
-    title:
       "A neoepitope derived from a novel germline Adenomatous polyposis coli (APC) gene mutation in Familial Adenomatous Polyposis (FAP) shows selective immunogenicity",
     authors:
       "Majumder, S., Shah, R., Elias, J., Mistry, Y., Karunakaran, C., Shah, P., ... Mahadevan, L.",
@@ -79,6 +71,14 @@ const publications = [
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a208",
+  },
+  {
+    title:
+      "An accurate machine learning approach to predict immunogenic peptides in human",
+    authors: "Shah, P., Maurya, A. K., Gupta, R., Chaudhuri, A., & Gupta, R.",
+    journal: "Canadian Journal of Biotechnology",
+    year: 2017,
+    doi: "https://doi.org/10.24870/cjb.2017-a209",
   },
 ];
 

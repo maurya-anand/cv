@@ -47,10 +47,13 @@
 }
 
 .publication-title {
+  font-size: 1.1em;
+}
+
+.publication-author {
   font-size: 0.9em;
 }
 
-.publication-author,
 .publication-journal {
   font-size: 0.8em;
 }
