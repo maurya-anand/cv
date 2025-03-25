@@ -4,6 +4,15 @@ import "./Publications.css";
 const publications = [
   {
     title:
+      "GeneFEAST: The pivotal, gene-centric step in functional enrichment analysis interpretation",
+    authors:
+      "Taylor, A., Macaulay, V. M., Miossec, M. J., Maurya, A. K., & Buffa, F. M.",
+    journal: "Bioinformatics",
+    year: 2025,
+    doi: "https://doi.org/10.1093/bioinformatics/btaf100",
+  },
+  {
+    title:
       "A cloud-based proteomics ML workflow for biomarker discovery",
     authors:
       "Zhou, Y., Maurya, A., Deng, Y., & Taylor, A",
@@ -18,15 +27,6 @@ const publications = [
     journal: "GigaScience",
     year: 2023,
     doi: "https://doi.org/10.1093/gigascience/giad067",
-  },
-  {
-    title:
-      "GeneFEAST: The pivotal, gene-centric step in functional enrichment analysis interpretation",
-    authors:
-      "Taylor, A., Macaulay, V. M., Maurya, A. K., Miossec, M. J., & Buffa, F. M.",
-    journal: "arXiv preprint arXiv:2309.00061",
-    year: 2023,
-    doi: "https://doi.org/10.48550/arxiv.2309.00061",
   },
   {
     title:
