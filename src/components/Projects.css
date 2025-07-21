@@ -1,86 +1,77 @@
-* {
-  box-sizing: border-box;
-}
-
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0.5em 0;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .project-card {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  overflow: hidden;
-  word-wrap: break-word;
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.project-card h3,
-.project-card p,
-.project-card a {
-  margin: 5px 0;
-}
-
-.project-card h3 {
+.project-card .project-title {
+  font-size: 1.5em;
   margin-top: 0;
-  font-size: 1.2em;
-}
-
-.project-card a {
-  color: rgb(33, 150, 243);
-  text-decoration: none;
-  font-size: 0.8em;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 15px;
 }
 
 .project-technologies {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
-.technology-icon {
-  font-size: 1.2em;
-  color: rgb(33, 150, 243);
+.technology-icon-wrapper .technology-icon {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.technology-icon-wrapper:hover .technology-icon {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.project-description {
+  font-size: 1em;
+  margin-bottom: 20px;
+  flex-grow: 1;
 }
 
 .project-links {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  margin-top: auto;
 }
 
 .project-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  color: #0073b1;
+  color: var(--secondary-color);
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .project-link:hover {
-  text-decoration: underline;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .project-link svg {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 1.2em;
 }
 
 @media (max-width: 600px) {
@@ -89,16 +80,6 @@
   }
 
   .project-card {
-    padding: 15px;
+    padding: 20px;
   }
-}
-
-@media only screen and (min-width: 1170px) {
-  .projects-grid {
-    width: 100%;
-  }
-}
-
-.project-description {
-  font-size: 1em;
 }

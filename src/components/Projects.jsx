@@ -151,15 +151,13 @@ const Projects = () => (
     <div className="projects-grid">
       {projects.map((project, index) => (
         <div key={index} className="project-card">
-          <div className="project-header">
-            <h3 className="project-title">{project.name}</h3>
-            <div className="project-technologies">
-              {project.technologies.map((tech, idx) => (
-                <span key={idx} className="technology-icon">
-                  {technologyIcons[tech]}
-                </span>
-              ))}
-            </div>
+          <h3 className="project-title">{project.name}</h3>
+          <div className="project-technologies">
+            {project.technologies.map((tech, idx) => (
+              <span key={idx} className="technology-icon-wrapper">
+                {technologyIcons[tech]}
+              </span>
+            ))}
           </div>
           <p className="project-description">{project.description}</p>
           <div className="project-links">

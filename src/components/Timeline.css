@@ -1,50 +1,99 @@
-.timeline-card {
-  transition: transform 0.2s;
+.section-container {
+  border-left: 5px solid var(--secondary-color);
+}
+.timeline-container {
+  position: relative;
+  padding: 20px 0;
 }
 
-.timeline-card:hover {
-  transform: scale(1.02);
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 4px;
+  background: var(--secondary-color);
+  border-radius: 2px;
 }
 
-.vertical-timeline {
-  width: 100%;
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
 }
 
-@media only screen and (min-width: 1170px) {
-  .vertical-timeline.vertical-timeline--two-columns {
-      width: 100%;
-  }
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  border: 4px solid var(--background-color);
+  z-index: 1;
 }
 
-h4 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 400;
+.timeline-content {
+  background: var(--card-background);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes fadeInOut {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.subtitle-font {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 500;
+.timeline-period {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.timeline-subtitle {
   font-size: 1.1em;
-  padding: 2.5% 0 2% 0;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.duty-list {
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
 .duty-list li {
   font-size: 1em;
-  padding: 1.5% 0 1.5% 0;
+  margin-bottom: 10px;
 }
 
-.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-  font-size: 1em;
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 22px;
+  }
+
+  .timeline-item {
+    padding-left: 65px;
+  }
 }

@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import React from "react";
 import "./Timeline.css";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
@@ -79,26 +74,29 @@ const timelineData = [
   },
 ];
 
-const combinedTimeline = timelineData.sort((a, b) => {
-  const getDate = (period) => new Date(period.split(" - ")[1] || new Date());
-  return getDate(b.period) - getDate(a.period);
+const sortedTimeline = timelineData.sort((a, b) => {
+  const getYear = (period) => {
+    const yearPart = period.split(" - ")[1];
+    if (yearPart === "Current") return new Date().getFullYear();
+    return new Date(yearPart).getFullYear();
+  };
+  return getYear(b.period) - getYear(a.period);
 });
 
 const Timeline = () => {
   return (
     <section className="section-container">
       <h2 className="centered-header">Career Timeline</h2>
-      <VerticalTimeline>
-        {combinedTimeline.map((item, index) => (
-          <VerticalTimelineElement
-            key={index}
-            date={item.period}
-            icon={item.type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <div className="timeline-card">
-              <h3 className="vertical-timeline-element-title">{item.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle subtitle-font">
+      <div className="timeline-container">
+        {sortedTimeline.map((item, index) => (
+          <div key={index} className="timeline-item">
+            <div className="timeline-icon">
+              {item.type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
+            </div>
+            <div className="timeline-content">
+              <span className="timeline-period">{item.period}</span>
+              <h3 className="timeline-title">{item.title}</h3>
+              <h4 className="timeline-subtitle">
                 {item.company} - {item.location}
               </h4>
               {item.duties.length > 0 && (
@@ -109,9 +107,9 @@ const Timeline = () => {
                 </ul>
               )}
             </div>
-          </VerticalTimelineElement>
+          </div>
         ))}
-      </VerticalTimeline>
+      </div>
     </section>
   );
 };
