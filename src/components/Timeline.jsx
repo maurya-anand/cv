@@ -25,7 +25,7 @@ const timelineData = [
     type: "education",
     company: "Adam Mickiewicz University",
     location: "Poznan, Poland",
-    title: "PhD Researcher",
+    title: "Research Scholar",
     period: "Oct 2018 - Dec 2022",
     duties: [
       "Developed a bioinformatics pipeline for automated exploration of NCBI SRA datasets, enabling efficient sequence-based searches and analysis of large-scale NGS data.",
@@ -43,10 +43,10 @@ const timelineData = [
     period: "Apr 2016 - Sept 2018",
     duties: [
       "Developed an in-house variant annotation database to support the interpretation and reporting of clinically relevant genomic variants.",
-      "Delivered WES, WGS, RNA seq, and neo-epitope prediction projects to clinicians and clients for diagnostic purposes.",
       "Automated the in-house neo-epitope prioritization pipeline for somatic variants to enhance scalability and expedite project delivery.",
       "Created a web application for automatic prioritization and reporting of neo-epitopes.",
       "Developed a web-based QC dashboard for NGS data analysis on in-house servers.",
+      "Delivered WES, WGS, RNA seq, and neo-epitope prediction projects to clinicians and clients for diagnostic purposes.",
     ],
   },
   {
