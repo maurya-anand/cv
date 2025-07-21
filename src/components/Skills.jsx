@@ -79,9 +79,9 @@ const skillsData = [
 const Skills = () => (
   <section className="section-container">
     <h2 className="centered-header">Skills</h2>
-    <div className="skills-grid">
+    <div className="skills-list">
       {skillsData.map((category, index) => (
-        <div key={index} className="skill-card">
+        <div key={index} className="skill-category">
           <div className="category-header">
             <div className="category-icon">{category.icon}</div>
             <h3>{category.category}</h3>

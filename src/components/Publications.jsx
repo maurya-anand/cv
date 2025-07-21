@@ -82,36 +82,25 @@ const publications = [
   },
 ];
 
-const PublicationCard = ({ title, authors, journal, year, doi }) => (
-  <div className="publication-card">
-    <h3 className="publication-title">{title}</h3>
-    <p className="publication-author">
-      <strong>Authors:</strong> {authors}
-    </p>
-    <p className="publication-journal">
-      <strong>Journal:</strong> {journal}, {year}
-    </p>
-    <p>
-      <a href={doi} target="_blank" rel="noopener noreferrer">
-        DOI: {doi}
-      </a>
-    </p>
-  </div>
-);
-
 const Publications = () => (
   <section className="section-container">
     <h2 className="centered-header">Publications & Posters</h2>
-    <div className="publications-grid">
+    <div className="publications-list">
       {publications.map((pub, index) => (
-        <PublicationCard
-          key={index}
-          title={pub.title}
-          authors={pub.authors}
-          journal={pub.journal}
-          year={pub.year}
-          doi={pub.doi}
-        />
+        <div key={index} className="publication-item">
+          <h3 className="publication-title">{pub.title}</h3>
+          <p className="publication-authors">
+            <strong>Authors:</strong> {pub.authors}
+          </p>
+          <p className="publication-journal">
+            <strong>Journal:</strong> {pub.journal}, {pub.year}
+          </p>
+          <p>
+            <a href={pub.doi} target="_blank" rel="noopener noreferrer">
+              DOI: {pub.doi}
+            </a>
+          </p>
+        </div>
       ))}
     </div>
   </section>
