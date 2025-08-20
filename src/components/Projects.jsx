@@ -13,6 +13,7 @@ import {
   SiDjango,
   SiPerl,
   SiGnubash,
+  SiGnu,
   SiJavascript,
   SiMui,
   SiAnaconda,
@@ -30,6 +31,13 @@ import "./Projects.css";
 
 const projects = [
   {
+    name: "Gauchian-enrich",
+    description:
+      "A variant annotator for GBA variants called by Illumina Gauchian tool.",
+    repo: "https://github.com/maurya-anand/gauchian-enrich",
+    technologies: ["Perl", "Make", "Docker", "SiGithubactions"],
+  },
+  {
     name: "proteomics-ML-workflow",
     description:
       "A cloud-based proteomics machine learning workflow for biomarker discovery.",
@@ -40,6 +48,35 @@ const projects = [
       "Python",
       "SiTensorflow",
       "SiScikitlearn",
+      "Docker",
+      "SiGithubactions",
+      "SiGooglecloud",
+    ],
+  },
+  {
+    name: "getBamDepth",
+    description:
+      "A tool to generate 'depth of coverage' from BAM/SAM/CRAM file or parse the output generated from samtools.",
+    repo: "https://github.com/maurya-anand/getBamDepth",
+    technologies: ["Perl", "SiGithubactions"],
+  },
+  {
+    name: "variant-liftover",
+    description:
+      "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
+    repo: "https://github.com/maurya-anand/liftover",
+    technologies: ["Make", "Python", "Docker", "SiGithubactions"],
+  },
+  {
+    name: "pb-variant-call",
+    description:
+      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
+    demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
+    repo: "https://github.com/anand-imcm/pb-variant-call",
+    technologies: [
+      "PiBracketsCurlyBold",
+      "Python",
+      "Perl",
       "Docker",
       "SiGithubactions",
       "SiGooglecloud",
@@ -60,33 +97,11 @@ const projects = [
     ],
   },
   {
-    name: "pb-variant-call",
-    description:
-      "A WDL-based workflow for variant calling and annotation using PacBio Hi-Fi reads, optimized for execution on the Terra.bio cloud platform.",
-    demo: "https://dockstore.org/workflows/github.com/anand-imcm/pb-variant-call",
-    repo: "https://github.com/anand-imcm/pb-variant-call",
-    technologies: [
-      "PiBracketsCurlyBold",
-      "Python",
-      "Perl",
-      "Docker",
-      "SiGithubactions",
-      "SiGooglecloud",
-    ],
-  },
-  {
     name: "SRA-annotator",
     description:
       "A command-line tool for retrieving annotations from the NCBI SRA database.",
     repo: "https://github.com/maurya-anand/sra-annotator",
     technologies: ["Python", "NCBIApi"],
-  },
-  {
-    name: "variant-liftover",
-    description:
-      "A command-line tool to liftover SNVs/Indels from hg19 to hg38.",
-    repo: "https://github.com/maurya-anand/liftover",
-    technologies: ["Bash", "Docker", "SiGithubactions"],
   },
   {
     name: "Covid19 tracker",
@@ -119,6 +134,7 @@ const technologyIcons = {
   Django: <SiDjango className="technology-icon" title="Django" />,
   Perl: <SiPerl className="technology-icon" title="Perl" />,
   Bash: <SiGnubash className="technology-icon" title="Bash" />,
+  Make: <SiGnu className="technology-icon" title="GNU Make" />,
   JavaScript: <SiJavascript className="technology-icon" title="JavaScript" />,
   MUI: <SiMui className="technology-icon" title="Material UI" />,
   SiAnaconda: <SiAnaconda className="technology-icon" title="Mamba" />,
