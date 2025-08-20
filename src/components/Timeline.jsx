@@ -5,10 +5,18 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 const timelineData = [
   {
     type: "work",
+    company: "Carl von Ossietzky University of Oldenburg",
+    location: "Oldenburg, Germany",
+    title: "Research Associate",
+    period: "Aug 2025 - Current",
+    duties: [],
+  },
+  {
+    type: "work",
     company: "University of Oxford",
     location: "Oxford, United Kingdom",
     title: "Bioinformatician",
-    period: "Jan 2023 - Current",
+    period: "Jan 2023 - Aug 2025",
     duties: [
       "Design and implement workflows for the research group’s Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud, including a WDL-based workflow for variant calling and annotation using PacBio long-read sequencing data, and a machine learning workflow for proteomic data.",
       "Lead the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
