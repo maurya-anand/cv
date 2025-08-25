@@ -61,7 +61,7 @@ const Header = () => (
       </div>
       <div className="contact-item">
         <FaMapMarkerAlt className="contact-icon" />
-        <span>Oxford, United Kingdom</span>
+        <span>Oldenburg, Germany</span>
       </div>
     </div>
   </header>
