@@ -81,7 +81,7 @@ const Skills = () => (
     <h2 className="centered-header">Skills</h2>
     <div className="skills-list">
       {skillsData.map((category, index) => (
-        <div key={index} className="skill-category">
+  <div key={index} className="skill-category card">
           <div className="category-header">
             <div className="category-icon">{category.icon}</div>
             <h3>{category.category}</h3>

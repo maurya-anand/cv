@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--card-background);
-  border-radius: var(--border-radius);
-  padding: 40px;
-  box-shadow: var(--card-shadow);
-  margin-bottom: 40px;
-  border-left: 5px solid var(--secondary-color);
+  margin-bottom: 10px;
+  /* visual style now inherited from .card */
+  padding: 0;
 }
+
+/* When combined with .card provide internal spacing */
+.header.card { padding: 40px; }
 
 .header-main {
   text-align: left;
@@ -68,21 +68,9 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-main {
-    margin-bottom: 25px;
-    text-align: left;
-  }
-
-  .header-contact {
-    text-align: left;
-  }
-
-  .contact-item {
-    justify-content: flex-start;
-  }
+  .header { flex-direction: column; align-items: center; text-align: center; }
+  .header-main { margin-bottom: 25px; text-align: center; }
+  .header-contact { text-align: center; }
+  .contact-item { justify-content: center; }
+  .github-links { justify-content: center; }
 }

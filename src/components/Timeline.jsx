@@ -101,7 +101,7 @@ const Timeline = () => {
             <div className="timeline-icon">
               {item.type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
             </div>
-            <div className="timeline-content">
+            <div className="timeline-content card">
               <span className="timeline-period">{item.period}</span>
               <h3 className="timeline-title">{item.title}</h3>
               <h4 className="timeline-subtitle">

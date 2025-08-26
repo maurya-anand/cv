@@ -9,7 +9,7 @@ import {
 import "./Header.css";
 
 const Header = () => (
-  <header className="header">
+  <header className="header card">
     <div className="header-main">
       <h1 className="header-name">Anand Maurya</h1>
       <p className="header-title">Bioinformatician</p>

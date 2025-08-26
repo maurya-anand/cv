@@ -87,7 +87,7 @@ const Publications = () => (
     <h2 className="centered-header">Publications & Posters</h2>
     <div className="publications-list">
       {publications.map((pub, index) => (
-        <div key={index} className="publication-item">
+  <div key={index} className="publication-item card">
           <h3 className="publication-title">{pub.title}</h3>
           <p className="publication-authors">
             <strong>Authors:</strong> {pub.authors}

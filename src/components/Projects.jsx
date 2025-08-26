@@ -166,7 +166,7 @@ const Projects = () => (
     <h2 className="centered-header">Projects</h2>
     <div className="projects-grid">
       {projects.map((project, index) => (
-        <div key={index} className="project-card">
+  <div key={index} className="project-card card">
           <h3 className="project-title">{project.name}</h3>
           <div className="project-technologies">
             {project.technologies.map((tech, idx) => (
