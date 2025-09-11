@@ -26,7 +26,7 @@ const Header = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          linkedin.com/in/anand-maurya
+          anand-maurya-
         </a>
       </div>
       <div className="contact-item">
