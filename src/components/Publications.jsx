@@ -95,8 +95,12 @@ const Publications = () => (
           <p className="publication-journal">
             <strong>Journal:</strong> {pub.journal}, {pub.year}
           </p>
-          <p>
-            <a href={pub.doi} target="_blank" rel="noopener noreferrer">
+          <p className="publication-link-wrapper">
+            <a
+              href={pub.doi}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               DOI: {pub.doi}
             </a>
           </p>
