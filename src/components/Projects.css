@@ -25,12 +25,6 @@
 .technology-icon-wrapper .technology-icon {
   font-size: 1.8em;
   color: var(--secondary-color);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.technology-icon-wrapper:hover .technology-icon {
-  color: var(--primary-color);
-  transform: scale(1.1);
 }
 
 .project-description {
@@ -51,12 +45,6 @@
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.project-link:hover {
-  color: var(--primary-color);
-  text-decoration: none;
 }
 
 .project-link svg {

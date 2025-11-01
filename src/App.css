@@ -80,32 +80,4 @@ ul {
   border-radius: var(--border-radius);
   padding: 24px;
   box-shadow: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  will-change: transform;
-}
-
-.card:hover, .card:focus-within {
-  transform: translateY(-4px);
-  box-shadow: var(--card-shadow-elevated);
-  border-color: var(--secondary-color);
-}
-
-.card:active {
-  transform: translateY(-1px);
-}
-
-/* On devices without hover capability, make tap (active) replicate hover elevation */
-@media (hover: none) {
-  .card:active {
-    transform: translateY(-4px);
-    box-shadow: var(--card-shadow-elevated);
-    border-color: var(--secondary-color);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card, .card:hover, .card:focus-within, .card:active {
-    transition: none;
-    transform: none;
-  }
 }

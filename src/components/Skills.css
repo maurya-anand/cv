@@ -38,12 +38,6 @@
   border-radius: 20px;
   font-size: 0.9em;
   font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.skill-tag:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {
