@@ -1,59 +1,96 @@
 .projects-grid {
   display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr 1fr;
-  align-items: stretch;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  margin: 0 auto;
 }
 
-.project-card { display: flex; flex-direction: column; }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
 
-.project-card.card { padding: 25px; }
+.project-card.card {
+  padding: 32px 30px;
+}
 
 .project-card .project-title {
-  font-size: 1.5em;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0;
+  color: var(--text-strong);
+  font-size: 1.28rem;
+  letter-spacing: 0.03em;
 }
 
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 12px;
 }
 
-.technology-icon-wrapper .technology-icon {
-  font-size: 1.8em;
-  color: var(--secondary-color);
+.technology-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 16px;
+  background: rgba(96, 165, 250, 0.16);
+  color: var(--highlights);
+  font-size: 1.1rem;
 }
 
 .project-description {
-  font-size: 1em;
-  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.7;
   flex-grow: 1;
 }
 
 .project-links {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: auto;
 }
+
 
 .project-link {
   display: inline-flex;
   align-items: center;
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 600;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: var(--text-strong);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .project-link svg {
-  margin-right: 8px;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
-@media (max-width: 750px) {
-  .projects-grid { grid-template-columns: 1fr; }
-  .project-card.card { padding: 20px; }
-  .project-description { text-align: justify; hyphens: auto; }
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: rgba(96, 165, 250, 0.45);
+  color: var(--text-strong);
+}
+
+@media (max-width: 960px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .project-card.card {
+    padding: 30px 28px;
+  }
+}
+
+@media (max-width: 540px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

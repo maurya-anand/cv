@@ -11,8 +11,20 @@ import "./Header.css";
 const Header = () => (
   <header className="header card">
     <div className="header-main">
-      <h1 className="header-name">Anand Maurya</h1>
-      <p className="header-title">Bioinformatician</p>
+      <div className="header-meta">
+        <h1 className="header-name">Anand Maurya</h1>
+      </div>
+      <span className="header-title">Bioinformatician</span>
+      <p className="header-summary">
+        Bioinformatician and Full-Stack Web Developer with professional
+        experience in designing, developing, and automating scalable NGS data
+        analysis pipelines across clinical genomics and multi-omics domains.
+      </p>
+      <p className="header-summary">
+        Specialized in analyzing both short-read (Illumina) and long-read
+        (PacBio HiFi) sequencing data, including whole-genome, whole-exome, and
+        RNA-seq, for research and diagnostic applications.
+      </p>
     </div>
     <div className="header-contact">
       <div className="contact-item">

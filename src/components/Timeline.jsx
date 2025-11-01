@@ -82,13 +82,27 @@ const timelineData = [
   },
 ];
 
-const sortedTimeline = timelineData.sort((a, b) => {
-  const getYear = (period) => {
-    const yearPart = period.split(" - ")[1];
-    if (yearPart === "Current") return new Date().getFullYear();
-    return new Date(yearPart).getFullYear();
-  };
-  return getYear(b.period) - getYear(a.period);
+const getPeriodDetails = (period) => {
+  const years = (period.match(/\d{4}/g) || []).map(Number);
+  const hasCurrent = /current/i.test(period);
+
+  const startYear = years[0] || 0;
+  const endYear = hasCurrent
+    ? new Date().getFullYear() + 1
+    : years[years.length - 1] || startYear;
+
+  return { startYear, endYear };
+};
+
+const sortedTimeline = [...timelineData].sort((a, b) => {
+  const aDetails = getPeriodDetails(a.period);
+  const bDetails = getPeriodDetails(b.period);
+
+  if (bDetails.endYear !== aDetails.endYear) {
+    return bDetails.endYear - aDetails.endYear;
+  }
+
+  return bDetails.startYear - aDetails.startYear;
 });
 
 const Timeline = () => {
@@ -96,27 +110,37 @@ const Timeline = () => {
     <section className="section-container">
       <h2 className="centered-header">Career Timeline</h2>
       <div className="timeline-container">
-        {sortedTimeline.map((item, index) => (
-          <div key={index} className="timeline-item">
-            <div className="timeline-icon">
-              {item.type === "work" ? <FaBriefcase /> : <FaGraduationCap />}
-            </div>
-            <div className="timeline-content card">
-              <span className="timeline-period">{item.period}</span>
-              <h3 className="timeline-title">{item.title}</h3>
-              <h4 className="timeline-subtitle">
-                {item.company} - {item.location}
-              </h4>
-              {item.duties.length > 0 && (
-                <ul className="duty-list">
-                  {item.duties.map((duty, idx) => (
-                    <li key={idx}>{duty}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </div>
-        ))}
+        {sortedTimeline.map((item, index) => {
+          const isWork = item.type === "work";
+          return (
+            <article key={index} className="timeline-entry">
+              <div className="timeline-node">
+                <span className="timeline-marker">
+                  {isWork ? <FaBriefcase /> : <FaGraduationCap />}
+                </span>
+                {index !== sortedTimeline.length - 1 && (
+                  <span className="timeline-connector" />
+                )}
+              </div>
+              <div className="timeline-card card">
+                <div className="timeline-card-header">
+                  <span className="timeline-period">{item.period}</span>
+                  <h3 className="timeline-title">{item.title}</h3>
+                  <p className="timeline-subtitle">
+                    {item.company} · {item.location}
+                  </p>
+                </div>
+                {item.duties.length > 0 && (
+                  <ul className="duty-list">
+                    {item.duties.map((duty, idx) => (
+                      <li key={idx}>{duty}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
