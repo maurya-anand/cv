@@ -4,21 +4,21 @@ import "./Publications.css";
 const publications = [
   {
     title:
+      "BiomarkerML: A cloud-based proteomics ML workflow for biomarker discovery",
+    authors:
+      "Zhou, Y., Maurya, A.K., Deng, Y., Fletcher, M.P., Ren, C., & Taylor, A.",
+    journal: "bioRxiv",
+    year: 2025,
+    doi: "https://doi.org/10.1101/2025.10.16.682839",
+  },
+  {
+    title:
       "GeneFEAST: The pivotal, gene-centric step in functional enrichment analysis interpretation",
     authors:
       "Taylor, A., Macaulay, V. M., Miossec, M. J., Maurya, A. K., & Buffa, F. M.",
     journal: "Bioinformatics",
     year: 2025,
     doi: "https://doi.org/10.1093/bioinformatics/btaf100",
-  },
-  {
-    title:
-      "A cloud-based proteomics ML workflow for biomarker discovery",
-    authors:
-      "Zhou, Y., Maurya, A., Deng, Y., & Taylor, A",
-    journal: "preprint zenodo.13378797",
-    year: 2024,
-    doi: "https://doi.org/10.5281/zenodo.13378797",
   },
   {
     title:
@@ -40,7 +40,7 @@ const publications = [
     title:
       "A neoepitope derived from a novel human germline APC gene mutation in familial adenomatous polyposis shows selective immunogenicity",
     authors:
-      "Majumder, S., Shah, R., Elias, J., Mistry, Y., Coral, K., Shah, P., ... Murugan, S.",
+      "Majumder, S., Shah, R., Elias, J., Mistry, Y., Coral, K., Shah, P., Maurya, A.K., Mittal, B., D'Silva, J.K., Murugan, S., Mahadevan, L., Sathian, R., Ramprasad, V.L., Chakraborty, P., Gupta, R., Chaudhuri, A., & Khanna-Gupta, A.",
     journal: "PloS one",
     year: 2018,
     doi: "https://doi.org/10.1371/journal.pone.0203845",
@@ -49,7 +49,7 @@ const publications = [
     title:
       "Integrated analysis of whole exome and RNA sequencing for Neo-epitope peptide prediction in buccal cancer",
     authors:
-      "Karunakaran, C., Elias, J., Mandoli, N., Maurya, A. K., Kantharia, R., Mistry, Y., ... Khanna-Gupta, A.",
+      "Karunakaran, C., Elias, J., Mandoli, N., Maurya, A.K., Kantharia, R., Mistry, Y., Jain, K., Gupta, R., Chaudhuri, A., & Khanna-Gupta, A.",
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a230",
@@ -58,7 +58,7 @@ const publications = [
     title:
       "A neoepitope derived from a novel germline Adenomatous polyposis coli (APC) gene mutation in Familial Adenomatous Polyposis (FAP) shows selective immunogenicity",
     authors:
-      "Majumder, S., Shah, R., Elias, J., Mistry, Y., Karunakaran, C., Shah, P., ... Mahadevan, L.",
+      "Majumder, S., Shah, R., Elias, J., Mistry, Y., Coral, K., Shah, P., Maurya, A.K., Mittal, B., D'Silva, J.K., & Mahadevan, L.",
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a236",
@@ -75,7 +75,7 @@ const publications = [
   {
     title:
       "An accurate machine learning approach to predict immunogenic peptides in human",
-    authors: "Shah, P., Maurya, A. K., Gupta, R., Chaudhuri, A., & Gupta, R.",
+    authors: "Shah, P., Maurya, A.K., Gupta, R., Chaudhuri, A., & Gupta, R.",
     journal: "Canadian Journal of Biotechnology",
     year: 2017,
     doi: "https://doi.org/10.24870/cjb.2017-a209",
@@ -87,7 +87,7 @@ const Publications = () => (
     <h2 className="centered-header">Publications & Posters</h2>
     <div className="publications-list">
       {publications.map((pub, index) => (
-  <div key={index} className="publication-item card">
+        <div key={index} className="publication-item card">
           <h3 className="publication-title">{pub.title}</h3>
           <p className="publication-authors">
             <strong>Authors:</strong> {pub.authors}
@@ -96,11 +96,7 @@ const Publications = () => (
             <strong>Journal:</strong> {pub.journal}, {pub.year}
           </p>
           <p className="publication-link-wrapper">
-            <a
-              href={pub.doi}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={pub.doi} target="_blank" rel="noopener noreferrer">
               DOI: {pub.doi}
             </a>
           </p>
