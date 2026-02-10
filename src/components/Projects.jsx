@@ -168,6 +168,7 @@ const Projects = () => (
       {projects.map((project, index) => (
   <div key={index} className="project-card card">
           <h3 className="project-title">{project.name}</h3>
+          <p className="project-description">{project.description}</p>
           <div className="project-technologies">
             {project.technologies.map((tech, idx) => (
               <span key={idx} className="technology-icon-wrapper">
@@ -175,7 +176,6 @@ const Projects = () => (
               </span>
             ))}
           </div>
-          <p className="project-description">{project.description}</p>
           <div className="project-links">
             {project.demo && (
               <a

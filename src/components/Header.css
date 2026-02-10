@@ -15,7 +15,7 @@
   content: '';
   position: absolute;
   inset: -60% 35% 10% auto;
-  background: radial-gradient(circle at center, rgba(96, 165, 250, 0.35), transparent 62%);
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.18), transparent 62%);
   filter: blur(20px);
   opacity: 0.65;
   z-index: -1;
@@ -25,7 +25,7 @@
   content: '';
   position: absolute;
   inset: auto 20% -55% -35%;
-  background: radial-gradient(circle at center, rgba(251, 191, 36, 0.4), transparent 65%);
+  background: radial-gradient(circle at center, rgba(217, 119, 6, 0.18), transparent 65%);
   filter: blur(26px);
   opacity: 0.4;
   z-index: -2;
@@ -47,13 +47,13 @@
   font-size: 1.08rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(226, 232, 240, 0.62);
+  color: rgba(71, 85, 105, 0.8);
 }
 
 .header-summary {
   font-size: 1.02rem;
   max-width: 560px;
-  color: rgba(226, 232, 240, 0.82);
+  color: var(--text-muted);
 }
 
 .header-highlights {
@@ -80,14 +80,11 @@
   gap: 14px;
   padding: 14px 18px;
   border-radius: 18px;
-  background: rgba(15, 23, 42, 0.55);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.35);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.contact-item:hover {
-  border-color: rgba(96, 165, 250, 0.45);
-}
 
 .contact-icon {
   color: var(--highlights);
@@ -108,7 +105,7 @@
 }
 
 .github-links span {
-  color: rgba(148, 163, 184, 0.5);
+  color: rgba(100, 116, 139, 0.7);
 }
 
 @media (max-width: 960px) {
