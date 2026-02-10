@@ -39,7 +39,11 @@ import {
 import { PiBracketsCurlyBold, PiNotebook } from "react-icons/pi";
 import { GiDna1 } from "react-icons/gi";
 import { BiLineChart } from "react-icons/bi";
-import { TbTopologyComplex, TbServerBolt, TbTopologyStar } from "react-icons/tb";
+import {
+  TbTopologyComplex,
+  TbServerBolt,
+  TbTopologyStar,
+} from "react-icons/tb";
 import "./Skills.css";
 
 const skillsData = [
@@ -53,33 +57,32 @@ const skillsData = [
     icon: <FaTools />,
   },
   {
-    category: "Workflow Management",
-    skills: ["Make", "Nextflow", "WDL"],
-    icon: <FaTools />,
-  },
-  {
     category: "Web Development",
     skills: [
-      "Bootstrap",
-      "D3.js",
-      "Django",
-      "Django Rest Framework",
-      "HighCharts",
-      "jQuery",
-      "Perl CGI",
-      "Plotly",
       "React",
+      "Django",
+      "Bootstrap",
+      "Django Rest Framework",
+      "Perl CGI",
+      "HighCharts",
+      "Plotly",
+      "jQuery",
     ],
     icon: <FaCode />,
   },
   {
     category: "Programming Languages",
-    skills: ["Bash", "JavaScript", "Perl", "Python", "R", "SQL"],
+    skills: ["Python", "Perl", "Bash", "JavaScript", "R", "SQL"],
     icon: <FaCode />,
   },
   {
+    category: "Workflow Management",
+    skills: ["Nextflow", "WDL", "Make"],
+    icon: <FaTools />,
+  },
+  {
     category: "Project Management & Documentation",
-    skills: ["Confluence", "GitHub Projects", "Markdown", "Quarto", "Redmine"],
+    skills: ["GitHub Projects", "Redmine", "Confluence", "Markdown", "Quarto"],
     icon: <FaProjectDiagram />,
   },
   {
@@ -94,7 +97,7 @@ const skillsData = [
   },
   {
     category: "Cluster Computing (HPC)",
-    skills: ["PBS", "SLURM"],
+    skills: ["SLURM", "PBS"],
     icon: <FaServer />,
   },
   {
@@ -153,7 +156,7 @@ const Skills = () => (
     <h2 className="centered-header">Skills</h2>
     <div className="skills-list">
       {skillsData.map((category, index) => (
-  <div key={index} className="skill-category card">
+        <div key={index} className="skill-category card">
           <div className="category-header">
             <div className="category-icon">{category.icon}</div>
             <h3>{category.category}</h3>

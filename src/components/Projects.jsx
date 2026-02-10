@@ -25,11 +25,41 @@ import {
   SiTensorflow,
   SiScikitlearn,
 } from "react-icons/si";
+import { FcWorkflow } from "react-icons/fc";
 import { TbApi } from "react-icons/tb";
 import { PiBracketsCurlyBold } from "react-icons/pi";
 import "./Projects.css";
 
 const projects = [
+  {
+    name: "nf-rna-wasp-allele-count",
+    description:
+      "Genotype-aware RNA-seq pipeline using STAR+WASP for allele-specific read counting and variant allele fraction estimation.",
+    repo: "https://github.com/maurya-anand/nf-rna-wasp-allele-count",
+    technologies: ["Nextflow", "Docker", "SiGithubactions"],
+  },
+  {
+    name: "nf-ont-methpro",
+    description:
+      "Haplotype-resolved DNA methylation profiling pipeline for Oxford Nanopore long-read sequencing.",
+    repo: "https://github.com/maurya-anand/nf-ont-methpro",
+    technologies: ["Nextflow", "Docker", "SiGithubactions"],
+  },
+  {
+    name: "gene-to-protein-domains",
+    description:
+      "A command-line utility to fetche protein domain & transcript info via UniProt/Ensembl APIs.",
+    repo: "https://github.com/maurya-anand/gene-to-protein-domains",
+    technologies: ["Python"],
+  },
+  {
+    name: "nanomethylpredict",
+    description:
+      "Predict DNA methylation from ONT sequencing data without native methylation calls.",
+    repo: "https://github.com/maurya-anand/nanomethylpredict",
+    technologies: ["Nextflow", "Docker", "SiGithubactions"],
+  },
+
   {
     name: "Gauchian-enrich",
     description:
@@ -154,11 +184,14 @@ const technologyIcons = {
       title="Workflow Description Language (WDL)"
     />
   ),
+  Nextflow: <FcWorkflow className="technology-icon" title="Nextflow" />,
   SiGooglecloud: (
     <SiGooglecloud className="technology-icon" title="Terra.bio on GCP" />
   ),
   SiTensorflow: <SiTensorflow className="technology-icon" title="Tensorflow" />,
-  SiScikitlearn: <SiScikitlearn className="technology-icon" title="Scikitlearn" />,
+  SiScikitlearn: (
+    <SiScikitlearn className="technology-icon" title="Scikitlearn" />
+  ),
 };
 
 const Projects = () => (
@@ -166,7 +199,7 @@ const Projects = () => (
     <h2 className="centered-header">Projects</h2>
     <div className="projects-grid">
       {projects.map((project, index) => (
-  <div key={index} className="project-card card">
+        <div key={index} className="project-card card">
           <h3 className="project-title">{project.name}</h3>
           <p className="project-description">{project.description}</p>
           <div className="project-technologies">
