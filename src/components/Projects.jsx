@@ -48,7 +48,7 @@ const projects = [
   {
     name: "gene-to-protein-domains",
     description:
-      "A command-line utility to fetche protein domain & transcript info via UniProt/Ensembl APIs.",
+      "A command-line utility to fetch protein domain & transcript info via UniProt/Ensembl APIs.",
     repo: "https://github.com/maurya-anand/gene-to-protein-domains",
     technologies: ["Python"],
   },
@@ -59,7 +59,6 @@ const projects = [
     repo: "https://github.com/maurya-anand/nanomethylpredict",
     technologies: ["Nextflow", "Docker", "SiGithubactions"],
   },
-
   {
     name: "Gauchian-enrich",
     description:
