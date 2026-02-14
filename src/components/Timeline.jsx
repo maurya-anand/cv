@@ -21,10 +21,10 @@ const timelineData = [
     title: "Bioinformatician",
     period: "Jan 2023 - Aug 2025",
     duties: [
-      "Design and implement workflows for the research group’s Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud, including a WDL-based workflow for variant calling and annotation using PacBio long-read sequencing data, and a machine learning workflow for proteomic data.",
-      "Lead the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
-      "Provide bioinformatics support to IMCM research teams, devising new analysis strategies and working closely with the bioinformatics core group.",
-      "Maintain extensive documentation of all analyses and code within the IMCM data platform.",
+      "Designed and implemented workflows for the research group's Terra.bio platform, a cloud-based trusted research environment (TRE) on Google Cloud, including a WDL-based workflow for variant calling and annotation using PacBio long-read sequencing data, and a machine learning workflow for proteomic data.",
+      "Led the processing and analysis of diverse 'omics datasets for research projects at the Oxford-GSK Institute for Molecular and Computational Medicine (IMCM).",
+      "Provided bioinformatics support to IMCM research teams, devising new analysis strategies and working closely with the bioinformatics core group.",
+      "Maintained extensive documentation of all analyses and code within the IMCM data platform.",
     ],
   },
   {
