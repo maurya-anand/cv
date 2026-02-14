@@ -135,3 +135,65 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media print {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 10pt;
+  }
+
+  .header.card {
+    overflow: visible;
+    padding: 14pt 16pt;
+  }
+
+  .header.card::before,
+  .header.card::after {
+    display: none !important;
+  }
+
+  .header-main {
+    gap: 6pt;
+  }
+
+  .header-title {
+    font-size: 9pt;
+    letter-spacing: 0.15em;
+  }
+
+  .header-summary {
+    font-size: 9.5pt;
+    max-width: 100%;
+  }
+
+  .header-highlights .chip {
+    font-size: 7.5pt;
+    padding: 2pt 6pt;
+  }
+
+  .header-contact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6pt;
+  }
+
+  .contact-item {
+    padding: 4pt 8pt;
+    border-radius: 4pt;
+    border: 1px solid #ccc !important;
+    gap: 6pt;
+  }
+
+  .contact-icon {
+    font-size: 9pt;
+  }
+
+  .contact-item a,
+  .contact-item span {
+    font-size: 8.5pt;
+  }
+
+  /* Don't print expanded URLs for contact items (they're already visible) */
+  .contact-item a[href]::after {
+    content: none;
+  }
+}

@@ -155,3 +155,55 @@
     hyphens: auto;
   }
 }
+
+@media print {
+  .timeline-container {
+    gap: 10pt;
+    padding: 0;
+  }
+
+  .timeline-entry {
+    padding-left: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .timeline-node {
+    display: none;
+  }
+
+  .timeline-card.card {
+    padding: 10pt 14pt;
+    border: 1px solid #ccc !important;
+  }
+
+  .timeline-card-header {
+    gap: 4pt;
+  }
+
+  .timeline-period {
+    font-size: 8pt;
+    padding: 1pt 8pt;
+    border: 1px solid #aaa !important;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .timeline-title {
+    font-size: 11pt;
+  }
+
+  .timeline-subtitle {
+    font-size: 9pt;
+  }
+
+  .duty-list {
+    gap: 3pt;
+    padding-left: 14pt;
+  }
+
+  .duty-list li {
+    font-size: 9pt;
+    line-height: 1.4;
+  }
+}

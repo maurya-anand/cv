@@ -9,7 +9,10 @@ const timelineData = [
     location: "Oldenburg, Germany",
     title: "Research Associate",
     period: "Aug 2025 - Current",
-    duties: [],
+    duties: [
+      "Lead bioinformatics operations at CFGB (Core Facility Genomics and Bioinformatics), overseeing genomic data management and analysis workflows.",
+      "Provide bioinformatics support for clinical research projects at the University Institute for Medical Genetics.",
+    ],
   },
   {
     type: "work",

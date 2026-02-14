@@ -66,3 +66,43 @@
 .publication-link-wrapper {
   max-width: 100%;
 }
+
+@media print {
+  .publications-list {
+    grid-template-columns: 1fr;
+    gap: 10pt;
+  }
+
+  .publication-item {
+    padding: 10pt 12pt;
+    border-radius: 6pt;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    gap: 4pt;
+  }
+
+  .publication-title {
+    font-size: 9.5pt;
+  }
+
+  .publication-authors {
+    font-size: 8.5pt;
+  }
+
+  .publication-journal {
+    font-size: 8pt;
+  }
+
+  .publication-item a {
+    padding: 3pt 8pt;
+    font-size: 7.5pt;
+    border-radius: 4pt;
+    border: 1px solid #bbb !important;
+  }
+
+  /* Don't duplicate URL after these links since the URL is the visible text */
+  .publication-item a[href]::after {
+    content: none;
+  }
+}

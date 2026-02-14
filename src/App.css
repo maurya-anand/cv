@@ -203,3 +203,109 @@ h3 {
     border-radius: 18px;
   }
 }
+
+/* ── Print styles ── */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  html, body {
+    width: 100%;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #000 !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 18pt;
+  }
+
+  header, section {
+    gap: 10pt;
+  }
+
+  h1 {
+    font-size: 20pt !important;
+  }
+
+  h2 {
+    font-size: 13pt !important;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    font-size: 11pt !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  /* Show link URLs after anchor text */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 7.5pt;
+    font-weight: 400;
+    color: #555 !important;
+    word-break: break-all;
+  }
+
+  /* But not for mailto or icon-only links */
+  a[href^="mailto:"]::after {
+    content: none;
+  }
+
+  .centered-header::after {
+    display: none;
+  }
+
+  .section-label::before,
+  .section-label::after {
+    background: #999 !important;
+  }
+
+  .section-container {
+    gap: 12pt;
+  }
+
+  .card {
+    border: 1px solid #ccc !important;
+    border-radius: 6pt;
+    padding: 14pt 16pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .tag {
+    border: 1px solid #aaa !important;
+    padding: 2pt 8pt;
+    font-size: 7.5pt;
+  }
+
+  .chip {
+    border: 1px solid #bbb !important;
+    padding: 2pt 8pt;
+    font-size: 7.5pt;
+  }
+}

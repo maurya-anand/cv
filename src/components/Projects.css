@@ -89,3 +89,57 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media print {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10pt;
+  }
+
+  .project-card {
+    gap: 6pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .project-card.card {
+    padding: 10pt 12pt;
+  }
+
+  .project-title {
+    font-size: 10pt !important;
+  }
+
+  .project-description {
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+
+  .technology-icon-wrapper {
+    width: 28pt;
+    height: 28pt;
+    font-size: 12pt;
+    border-radius: 6pt;
+    border: 1px solid #ccc !important;
+  }
+
+  .project-links {
+    gap: 4pt;
+  }
+
+  .project-link {
+    padding: 3pt 8pt;
+    font-size: 8pt;
+    border-radius: 4pt;
+    border: 1px solid #bbb !important;
+  }
+
+  .project-link svg {
+    font-size: 8pt;
+  }
+
+  /* Show project link URLs */
+  .project-link::after {
+    content: none;
+  }
+}
